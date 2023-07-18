@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* shared style */
+.common_color {
+    color: #727272;
+}
+
+.common_para {
+    color: #727272;
+    font-weight: 400;
+    margin: 20px;
+    line-height: 26px;
+
+}
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 30px 200px;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.nave_title {
+    color: #131313;
+    font-size: 45px;
+}
+
+nav ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+
+}
+
+/* banner style start */
+.banner_content {
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.b_title {
+    margin-top: 65px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+
+
+.btn_primary {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 180px;
+    height: 64px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.banner img {
+    margin: 20px 80px;
+    width: 95%;
+
+
+}
+
+/* banner style end */
+/* feature start */
+main {
+    background: #FFF;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.features_container {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+
+.feaure_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.feature_content {
+    padding: 0 70px;
+
+
+}
+
+.f_title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.descripton {
+    margin: 20px 0;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* feature end */
+/* experience start */
+.experience_container {
+    display: flex;
+
+}
+
+.experience_content {}
+
+.exp_tlt {
+    font-size: 3rem;
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card_tlt {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #131313;
+}
+
+.experience_image {
+    width: 100%;
+}
+
+.experience_image img {
+    margin-left: 60px;
+}
+
+.exp_badge {
+    padding: 20px;
+    width: 300px;
+    color: #FFF;
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+}
+
+.exp_badge h2 {
+    font-size: 4rem;
+}
+
+.exp_badge p {
+    font-size: 1.5rem;
+
+}
+
+/* experience end */
+/* fact section satrt */
+.fact {}
+
+.fact h4 {
+    margin: 30px 0;
+    font-size: 3rem;
+}
+
+.award_fact_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.award_card {
+    margin: 80px 0;
+    padding: 20px;
+    width: 230px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+}
+
+.award_card img {
+    width: 45px;
+}
+
+.card_status {
+    font-size: 2.8rem;
+    color: #424242;
+}
+
+.award_desc {
+    font-size: 1.4rem;
+    color: #727272;
+}
+
+/* fact section end */
+/* sposnsers start */
+.sponser {
+    text-align: center;
+}
+
+.sponser h3 {
+    font-size: 2.7rem;
+    text-transform: capitalize;
+}
+
+.sponsers_container {
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+/* sposnsers end*/
+footer {
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #424242;
+}
+
+
+
+
+/* responsive design */
+/* mobile device */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .features_container,
+    .experience_container,
+    .award_fact_container,
+    .sponsers_container {
+        flex-direction: column;
+    }
+
+    .banner_content {
+        width: 200px;
+    }
+
+    .b_title {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .banner img {
+        width: 80%;
+    }
+
+    .feaure_img {
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .features_container {
+        flex-direction: column;
+    }
+
+    .banner_content {
+        width: 500px;
+    }
+}
